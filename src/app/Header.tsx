@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import NavLinks from "./NavLinks";
+import SearchBox from "./SearchBox";
 
 function Header() {
   return (
@@ -19,10 +20,8 @@ function Header() {
           </button>
         </div>
       </div>
-      {/* NavLinks */}
       <NavLinks />
-
-      {/* SearchBox */}
+      <SearchBox />
     </header>
   );
 }
