@@ -16,7 +16,7 @@ function page({ searchParams }: Props) {
 
   return (
     <article>
-      <section>
+      <section className="flex flex-col lg:flex-row pb-24 px-0 lg:px-10">
         {article.image && (
           // eslint-disable-next-line @next/next/no-img-element
           <img
@@ -34,6 +34,7 @@ function page({ searchParams }: Props) {
             <h2 className="font-bold pl-4">Source: {article.source}</h2>
             <p className="pl-4">{article.published_at}</p>
           </div>
+          <p className="pt-4">{article.description}</p>
         </div>
       </section>
     </article>
